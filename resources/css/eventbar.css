@@ -1,0 +1,56 @@
+.eventbar {
+    width: calc(100% - 2em);
+    height: 250px;
+    margin: 15px;
+    padding: 10px;
+    display: inline-flex;
+    border-radius: 5px;
+    background: rgba(247, 247, 247, 0.75);
+    z-index: 3;
+    border: 1px solid rgb(232, 232, 232);
+}
+
+.event {
+    height: 170px;
+    width: 280px;
+    border-radius: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-clip: border-box;
+    object-fit: cover;
+    object-position: center;
+
+    transition: background-size 800ms, font-size 800ms;
+}
+
+.event:hover {
+    background-size: 120% 120%;
+    font-size: 15pt;
+}
+
+.event-name{
+    position: absolute;
+    display: inline;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.event-subtitle {
+    position: absolute;
+    display: inline;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+

@@ -1,0 +1,43 @@
+- Faça o clone do projeto em seu servidor Web (WAMP, XAMPP, Apache, etc) - Recomendo o WAMP
+
+- No seu servidor de banco de dados MySQL, crie um novo database chamado talktube
+
+	CREATE DATABASE `talktube` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */;
+
+- Na pasta do projeto, existe um arquivo chamado .env, que contem todas as configurações do projeto. Caso o arquivo .env não exista, copie o arquivo .env.example e depois renomeie-o para .env
+
+- Ainda no arquivo .env, atualize as configurações de acesso ao banco de dados
+
+	DB_CONNECTION=mysql
+	DB_HOST=host da conexão
+	DB_PORT=porta da conexão
+	DB_DATABASE=talktube
+	DB_USERNAME=usuário do banco de dados
+	DB_PASSWORD=senha do banco de dados
+
+_ Navegue até a pasta do projeto através do prompt de comando (CMD, PowerShell, Git Bash, etc)
+
+- No prompt de comando, após acessar a pasta do projeto, execute o comando npm install
+
+- Depois, ainda no prompt de comando, digite o comando composer install
+
+- Dentro da pasta do projeto existe uma pasta chamada database. Nesta pasta está os arquivos de migração e criação de dados para teste.
+
+- No prompt de comando, digite o comando php artisan cache:clear
+
+- No prompt de comando, digite o comando php artisan config:clear
+
+- No prompt de comando, digite o comando php artisan view:clear
+
+- No prompt de comando, digite o comando php artisan migrate, para executar as migrações e criar as tabelas no banco de dados
+
+- No prompt de comando, digite o comando php artisan db:seed, para criar os dados de testes
+
+- Após executar o db:seed, dê um select na tabela users. Se as migrações tiverem ocorrido com sucesso, haverá alguns usuários lá para testes.
+
+- No prompt de comando, execute no prompt de comando npm run dev
+
+- Após executar todas a etapas, tente executar a aplicação
+
+
+

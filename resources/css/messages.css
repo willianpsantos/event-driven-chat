@@ -1,0 +1,221 @@
+.messages-history {
+    width: 100%;
+    margin:0;
+    padding:0;
+    border:none;
+    padding-top: 25px;
+    overflow-y: auto;
+}
+
+.messages-history-header {
+    padding: 5px;
+    height: 50px;
+    width: 100%;
+    list-style-type: none;
+    border-bottom: 0.15em solid rgb(217, 215, 215);
+}
+
+.messages-history-header h6 {
+    float:left;
+}
+
+.messages-history-header .btn-new-group {
+    float:right;
+    text-transform: uppercase;
+    margin-top:-12px;
+}
+
+.message-history-item {
+    padding: 5px;
+    padding-top: 25px;
+    height: 100px;
+    width: 100%;
+    list-style-type: none;
+    display: inline-flex;
+    border-bottom: 0.1em solid rgb(217, 215, 215);
+}
+
+.message-history-item:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+.message-history-item.selected {
+    background-color: #133f91;
+    color: #fff;
+}
+
+.message-history-item-images {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin:0;
+}
+
+.message-history-item-images.user,
+.message-history-item-images.group {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.message-history-item-images.user img,
+.message-history-item-images.group img {
+    width: 39px;
+    height: 39px;
+}
+
+.message-history-item-images.group {
+    position: relative;
+}
+
+.message-history-item-images.group img:first-of-type {
+    z-index: 1;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.message-history-item-images.group img:last-of-type {
+    z-index: 2;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.message-history-item-info {
+    width:100%;
+    height: 100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.message-history-item-name {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.message-history-item-name .form-control {
+    background: #fff;
+    border-radius: 5px;
+    padding-left: 15px;
+    width:95%;
+}
+
+.message-history-item-name .interval {
+    float: right;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #b1b7ba;
+}
+
+.message-history-last-message {
+    font-size: 0.95em;
+    color: #b1b7ba;
+}
+
+.chat-container {
+    width: 100%;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background: rgba(247, 247, 247, 0.75);
+    border: 1px solid rgb(232, 232, 232);
+    z-index: 3;
+}
+
+.chat-messages {
+    width:100%;
+    height: 86%;
+    max-height: 86%;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+}
+
+.chat-messages .own-messages,
+.chat-messages .others-messages {
+    width: 70%;
+    margin:5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.chat-messages .own-messages .sender,
+.chat-messages .others-messages .sender {
+    width: 100%;
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+.sender .sender-name {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 0.95em;
+    width:72%;
+}
+
+.chat-messages .own-messages .sent-at,
+.chat-messages .others-messages .sent-at {
+    font-size: 0.85em;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.chat-messages .others-messages .sent-at {
+    color:#a8a8a8;
+}
+
+.chat-messages .own-messages .sent-at {
+    color:#fff;
+}
+
+.chat-message-row {
+    width: 100%;
+    display: inline-block;;
+}
+
+.chat-messages .own-messages {
+    float:right;
+    background-color: rgba(12, 173, 207, 0.8);
+    border: 1px solid rgba(12, 173, 207, 0.8);
+    color: #fff;
+}
+
+.chat-messages .others-messages {
+    float:left;
+    background-color: #fff;
+    border: 1px solid #f5f7f7;
+}
+
+.chat-message-input {
+    width: 100%;
+    height: 12%;
+}
+
+.chat-message-input input[type="text"] {
+    width: 100%;
+    height: 9.5%;
+    line-height: 1em;
+
+    border-radius: 2px;
+    border: 0.1em solid #d9d7d7;
+    padding: 30px;
+    padding-left: 15px;
+}
+
+.chat .group-video-call {
+    margin: 5px;
+    margin-left: 15px;
+    width: 100%;
+}
+
+.chat .group-video-call .added-users {
+    width: 55px;
+}
+
+.chat .group-video-call .add-user-to-call {
+    padding-top:9px;
+}

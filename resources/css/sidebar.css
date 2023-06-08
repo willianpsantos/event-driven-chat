@@ -1,0 +1,54 @@
+.sidebar {
+    width: 90px;
+    position: absolute;
+    left:0;
+    top:0;
+    bottom: 0;
+    text-align: center;
+    background: transparent;
+    z-index:2;
+}
+
+.sidebar .logo {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    object-fit: scale-down;
+    object-position: center;
+    width: 100%;
+}
+
+.sidebar ul.middle-options,
+.sidebar ul.bottom-options {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    padding: 0;
+}
+
+.sidebar ul.middle-options {
+    top: 22%;
+}
+
+.sidebar ul.bottom-options {
+    bottom: 0px;
+}
+
+.sidebar ul.middle-options li,
+.sidebar ul.bottom-options li {
+    list-style: none;
+    padding: 25px;
+    cursor: pointer;
+    transition: border-left 200ms;
+}
+
+.sidebar ul.middle-options li.selected,
+.sidebar ul.bottom-options li.selected {
+    border-left: 0.5em solid #fff;
+}
+
+.sidebar ul.middle-options li.selected img,
+.sidebar ul.bottom-options li.selected img {
+    filter: invert(0.5);
+}
